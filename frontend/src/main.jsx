@@ -14,16 +14,15 @@ Route, createRoutesFromElements,
 
 } from "react-router-dom";
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<App />} />
       <Route path="signup" element={<Signup />} />
       <Route path="signin" element={<Signin />} />
-      <Route path="Dashboard" element={<Dashboard />} >
-            <Route path='sendmoney' element={<SendMoney/>}/>
-      </Route>
+      <Route path="dashboard" element={<Dashboard />}/>
+        <Route path="dashboard/sendmoney" element={<SendMoney />} />
+     
     </Route>
   )
 )

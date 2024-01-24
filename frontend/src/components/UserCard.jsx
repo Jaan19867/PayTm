@@ -12,11 +12,12 @@ function UserCard({ userInfo}) {
       <div className="w-5/6 p-1 text-lg">
         {userInfo.firstName + " " + userInfo.lastName}
       </div>
-      <div className="w-1/6 p-1 text-lg hover:bg-sky-700" onClick={
+      <button className="w-1/6 p-1 text-lg hover:bg-sky-700" onClick={
         ()=>{
   navigate("/dashboard/sendmoney")
+  
         }
-      }>Send money</div>
+      }>Send money</button>
     </div>
   )
 }
